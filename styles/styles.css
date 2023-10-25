@@ -1,0 +1,72 @@
+html {
+    background-color: #262626;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 300px;
+    min-width: 290px;
+    height: 100%;
+}
+
+#navbar header {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#navbar ul {
+    list-style-type: none;
+}
+
+#navbar a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    color: #dddddd;
+}
+
+#navbar a:active, a:visited {
+    color: #ffffff;
+}
+
+#main-doc {
+    position: absolute;
+    top: 0;
+    margin-left: 300px;
+}
+
+section header {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+section {
+    padding-bottom: 50px;
+}
+
+@media (max-width: 815px) {
+    #navbar {
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-height: 275px;
+        margin: -180px 0;
+        padding: 0;
+        z-index: 1;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-top: 200px;
+        margin-left: 15px;
+    }
+}
